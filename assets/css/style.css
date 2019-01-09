@@ -1,10 +1,24 @@
-html,
 body {
-	height: 100%;
-	width: 100%;
-	margin: 0;
-	padding: 0;
+	background: black;
 }
+
+.nav-link {
+	color: silver !important;
+}
+
+.page-section{
+	width: 75vw;
+	margin: auto;
+	margin-top: 10px;
+	border-radius: 10px;
+	background-color: rgba(255,255,255,.6) !important;
+	padding: 1rem;
+}
+
+.page-section-heading{
+	padding-top:15px;
+}
+
 
 @media (min-width: 992px) { 
     #top-nav {
@@ -17,6 +31,7 @@ body {
 	#top-nav.collapsed {
 		padding: 0;
 		background: black !important;
+		border-bottom: silver 2.5px solid !important;
 	}
 }
 
@@ -51,7 +66,7 @@ body {
 	background-color: white;
 }
 
-body {
+.masthead {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#094c72+98,01293f+100 */
     font-weight: 300;
 	background: #094c72;
@@ -141,8 +156,8 @@ html {
 	background: radial-gradient(ellipse at center, #f2c5bd 10%, #945986 100%);
 } */
 
-*:before,
-*:after {
+.masthead *:before,
+.masthead *:after {
 	content: '';
 	display: block;
 	position: absolute;
