@@ -1,10 +1,12 @@
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	background: black;
 }
 
-.nav-link {
-	color: silver !important;
-}
+
 
 .page-section{
 	width: 75vw;
@@ -17,6 +19,10 @@ body {
 
 .page-section-heading{
 	padding-top:15px;
+}
+
+.fa-6x{
+	padding-top: 10px;
 }
 
 
@@ -35,6 +41,17 @@ body {
 	}
 }
 
+@media screen and (max-width: 600px) {
+	.stars {
+	  visibility: hidden;
+	  clear: both;
+	  float: left;
+	  margin: 10px auto 5px 20px;
+	  width: 28%;
+	  display: none;
+	}
+  }
+
 #top-nav {
 	min-height: 66px;
 	padding: .5rem;
@@ -46,7 +63,8 @@ body {
 }
 
 .masthead {
-    height: 100vh;
+	height: 100vh;
+	min-height: 350px;
 }
 
 .masthead-title {

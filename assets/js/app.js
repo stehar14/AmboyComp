@@ -26,8 +26,8 @@ $(function() {
         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
         if (target.length) {
           $('html, body').animate({
-            scrollTop: (target.offset().top - 54)
-          }, 1000, "easeInOutExpo");
+            scrollTop: (target.offset().top - 116)
+          }, 300, "linear");
           return false;
         }
       }
@@ -41,7 +41,7 @@ $(function() {
     // Activate scrollspy to add active class to navbar items on scroll
     $('body').scrollspy({
       target: '#top-nav',
-      offset: 54
+      offset: 116
     });
   
   })(jQuery); // End of use strict
