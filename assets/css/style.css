@@ -17,7 +17,7 @@ body {
 .page-section{
 	width: 75vw;
 	margin: auto;
-	margin-top: 10px;
+	margin-top: 1rem;
 	border-radius: 10px;
 	background-color: rgba(255,255,255,.6) !important;
 	padding: 1rem;
@@ -32,7 +32,7 @@ body {
 }
 
 
-@media (min-width: 992px) { 
+@media (min-width: 858px) { 
     #top-nav {
         transition: padding-top 0.2s ease-in-out, padding-bottom 0.2s ease-in-out;
         padding: 1.5rem 0;
@@ -45,8 +45,16 @@ body {
 		background: black !important;
 		border-bottom: silver 2.5px solid !important;
 	}
-}
 
+}
+ @media screen and (max-height: 550px) {
+	 .navbar{
+		 background: transparent !important;
+	 }
+	 .navbar-brand {
+		visibility: hidden;
+	 }
+ }
 @media screen and (max-width: 600px) {
 	.stars {
 	  visibility: hidden;
@@ -383,47 +391,51 @@ html {
   Icons
  ================= */
 
+.footer-top{
+	border-top: silver 2.5px solid !important;
+	margin-top: 20px;
+}
 /* footer social icons */
-ul.social-network {
+ul.social {
 	list-style: none;
-	display: inline;
+	
 	margin-left:0 !important;
 	padding: 0;
+	margin: 40px auto;
 }
-ul.social-network li {
+ul.social li {
 	display: inline;
 	margin: 0 5px;
 }
 
+.pres, .contact {
+	color: #D3D3D3;
+}
+
+.footer-title {
+	color: #33ccff;
+}
+
 
 /* footer social icons */
-.social-network a.icoRss:hover {
-	background-color: #F56505;
+.social a.face:hover {
+	background:#3B5998;
 }
-.social-network a.icoFacebook:hover {
-	background-color:#3B5998;
+.social a.twit:hover {
+	background:#33ccff;
 }
-.social-network a.icoTwitter:hover {
-	background-color:#33ccff;
+.social a.goog:hover {
+	background:#BD3518;
 }
-.social-network a.icoGoogle:hover {
-	background-color:#BD3518;
+.social a.linked:hover {
+	background:#007bb7;
 }
-.social-network a.icoVimeo:hover {
-	background-color:#0590B8;
-}
-.social-network a.icoLinkedin:hover {
-	background-color:#007bb7;
-}
-.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
-.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+.social a.face:hover i, .social a.twit:hover i,
+.social a.goog:hover i, .social a.linked:hover i {
 	color:#fff;
 }
-a.socialIcon:hover, .socialHoverClass {
-	color:#44BCDD;
-}
 
-.social-circle li a {
+.social li a {
 	display:inline-block;
 	position:relative;
 	margin:0 auto 0 auto;
@@ -434,25 +446,30 @@ a.socialIcon:hover, .socialHoverClass {
 	width: 50px;
 	height: 50px;
 	font-size:20px;
+	background: #094c72;
+	background: -webkit-radial-gradient(bottom, ellipse cover, #094c72 0%, #01293f 100%);
+	background: -webkit-radial-gradient(ellipse at bottom, #094c72 0%, #01293f 100%);
+	background: -webkit-radial-gradient(bottom, ellipse, #094c72 0%, #01293f 100%);
+	background: radial-gradient(ellipse at bottom, #094c72 0%, #01293f 100%);  
 }
-.social-circle li i {
+.social li i {
 	margin:0;
 	line-height:50px;
 	text-align: center;
 }
 
-.social-circle li a:hover i, .triggeredHover {
+.social li a:hover i {
 	-moz-transform: rotate(360deg);
 	-webkit-transform: rotate(360deg);
 	-ms--transform: rotate(360deg);
 	transform: rotate(360deg);
-	-webkit-transition: all 0.2s;
-	-moz-transition: all 0.2s;
-	-o-transition: all 0.2s;
-	-ms-transition: all 0.2s;
-	transition: all 0.2s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	transition: all 0.5s;
 }
-.social-circle i {
+.social i {
 	color: #fff;
 	-webkit-transition: all 0.8s;
 	-moz-transition: all 0.8s;
@@ -461,6 +478,12 @@ a.socialIcon:hover, .socialHoverClass {
 	transition: all 0.8s;
 }
 
-a {
- background-color: #D3D3D3;   
+.footer-top {
+	margin-top: 3rem;
+    background: #094c72;
+	background: -webkit-radial-gradient(bottom, ellipse cover, #094c72 0%, #01293f 100%);
+	background: -webkit-radial-gradient(ellipse at bottom, #094c72 0%, #01293f 100%);
+	background: -webkit-radial-gradient(bottom, ellipse, #094c72 0%, #01293f 100%);
+	background: radial-gradient(ellipse at bottom, #094c72 0%, #01293f 100%);
+	
 }

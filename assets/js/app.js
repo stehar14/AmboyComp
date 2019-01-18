@@ -15,6 +15,13 @@ $(function() {
         }
     });
 });
+$(window).scroll(function() {
+  if($(window).scrollTop() + $(window).height() == $(document).height()) {
+      $(".footer-top").addClass("bottom");
+  } else {
+    $(".footer-top").removeClass("bottom");
+  }
+});
 
 (function($) {
     "use strict"; // Start of use strict
