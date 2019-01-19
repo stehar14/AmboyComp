@@ -5,7 +5,10 @@ html {
 #main {
   padding-top: 2rem;
   padding-bottom: 3rem;
-	background: black;
+  background: -webkit-linear-gradient(110deg, #b1b1b1 40%, #212121 40%);
+  background: -o-linear-gradient(110deg, #b1b1b1 40%, #212121 40%);
+  background: -moz-linear-gradient(110deg, #b1b1b1 40%, #212121 40%);
+  background: linear-gradient(110deg, #b1b1b1 40%, #212121 40%);
 }
 
 .masthead-title {
