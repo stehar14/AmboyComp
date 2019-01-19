@@ -11,6 +11,9 @@ html {
   background: linear-gradient(110deg, #b1b1b1 40%, #212121 40%);
 }
 
+#titles {
+  z-index: 10;
+}
 .masthead-title {
   font-size: 4rem !important;
   text-shadow: 2px 2px black;
@@ -169,6 +172,10 @@ html {
 	position: absolute;
 }
 
+#lh {
+  z-index: 0;
+}
+
 #lighthouse {
 	position: absolute;
 	margin: auto;
@@ -185,8 +192,8 @@ html {
 	width: 12px;
 	background: #4f1c15;
 	bottom: 0;
-	z-index: 1;
-	border-radius: 6px 6px 0 0;
+  border-radius: 6px 6px 0 0;
+  z-index:1;
 }
 
 #lighthouse:after {
@@ -556,6 +563,10 @@ ul.social li {
 @media screen and (max-width: 532px) {
 	.fa-6x {
 	  font-size: 3rem !important;
+  }
+
+  #lighthouse:before {
+    visibility: hidden;
   }
 
   #network-head {
