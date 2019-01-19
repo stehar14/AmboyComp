@@ -2,38 +2,48 @@ html {
 	scroll-behavior: smooth;
 }
 
-body {
+#main {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
 	background: black;
 }
 
-.masthead-title{
-	font-size: 4rem !important;
+.masthead-title {
+  font-size: 4rem !important;
+  text-shadow: 2px 2px black;
 }
 
-.masthead-subtitle{
-	font-size: 1.5rem;
+.masthead-subtitle {
+  font-size: 1.5rem;
+  text-shadow: 2px 2px black;
 }
 
-.page-section{
+.page-section {
 	width: 75vw;
 	margin: auto;
 	margin-top: 1rem;
 	border-radius: 10px;
 	background-color: rgba(255,255,255,.6) !important;
-	padding: 1rem;
+  padding: 1rem;
+  opacity: 0;
 }
 
-.page-section-heading{
+.page-section-heading {
 	padding-top:15px;
 }
 
-.fa-6x{
+.fa-6x {
 	padding-top: 10px;
 }
 
 #top-nav {
 	min-height: 66px;
-	padding: .5rem;
+  padding: .5rem;
+  width: 100% !important;
+}
+
+.show {
+  background-color: #212121;
 }
 
 .nav-link {
@@ -55,7 +65,7 @@ body {
 	height:100px;
 }
 
-.fit-height{
+.fit-height {
     height: 100% !important;
 }
 
@@ -148,10 +158,6 @@ html {
 	width: 100%;
 	height: 100%;
 }
-
-/* body {
-	background: radial-gradient(ellipse at center, #f2c5bd 10%, #945986 100%);
-} */
 
 .masthead *:before,
 .masthead *:after {
@@ -312,63 +318,82 @@ html {
 /* Specific Levels - Widths are 1px wider on some areas to cover ugly rendering. I also can't get nth-child to work. */
 #lighthouse .row {
   width: 60px;
-  border-bottom: 50px solid #8D3C46; }
-  #lighthouse .row:before {
-    border-bottom-color: #f2f2f2;
-    border-width: 0 3px 50px 58px; }
-	#lighthouse .row:after {
-    left: 30px;
-    width: 28px; }
+  border-bottom: 50px solid #8D3C46; 
+}
 
-	#lighthouse .row + .row {
+#lighthouse .row:before {
+  border-bottom-color: #f2f2f2;
+  border-width: 0 3px 50px 58px;
+}
+
+#lighthouse .row:after {
+  left: 30px;
+  width: 28px;
+}
+
+#lighthouse .row + .row {
   width: 66px;
-  border-bottom: 50px solid #f2f2f2; }
-  #lighthouse .row + .row:before {
-    border-bottom-color: #8D3C46;
-    border-width: 0 3px 50px 64px; }
-	#lighthouse .row + .row:after {
-    left: 33px;
-    width: 31px; }
+  border-bottom: 50px solid #f2f2f2;
+}
 
-	#lighthouse .row + .row + .row {
+#lighthouse .row + .row:before {
+  border-bottom-color: #8D3C46;
+  border-width: 0 3px 50px 64px;
+}
+
+#lighthouse .row + .row:after {
+  left: 33px;
+  width: 31px;
+}
+
+#lighthouse .row + .row + .row {
   width: 72px;
-  border-bottom: 50px solid #8D3C46; }
-  #lighthouse .row + .row + .row:before {
-    border-bottom-color: #f2f2f2;
-    border-width: 0 3px 50px 70px; }
-	#lighthouse .row + .row + .row:after {
-    left: 36px;
-    width: 34px; }
+  border-bottom: 50px solid #8D3C46;
+}
 
-	#lighthouse .row + .row + .row + .row {
+#lighthouse .row + .row + .row:before {
+  border-bottom-color: #f2f2f2;
+  border-width: 0 3px 50px 70px;
+}
+
+#lighthouse .row + .row + .row:after {
+  left: 36px;
+  width: 34px;
+}
+
+#lighthouse .row + .row + .row + .row {
   width: 78px;
-  border-bottom: 50px solid #f2f2f2; }
-  #lighthouse .row + .row + .row + .row:before {
-    border-bottom-color: #8D3C46;
-    border-width: 0 3px 50px 76px; }
-	#lighthouse .row + .row + .row + .row:after {
-    left: 39px;
-	width: 36px; }
+  border-bottom: 50px solid #f2f2f2;
+}
+
+#lighthouse .row + .row + .row + .row:before {
+  border-bottom-color: #8D3C46;
+  border-width: 0 3px 50px 76px;
+}
+
+#lighthouse .row + .row + .row + .row:after {
+  left: 39px;
+  width: 36px;
+}
 	
-
-
 /*=========================
   Icons
  ================= */
 
-.footer-top{
+.footer-top {
 	border-top: silver 2.5px solid !important;
-	margin-top: 20px;
+	margin-top: 0;
 	padding-top: 20px;
 }
+
 /* footer social icons */
 ul.social {
 	list-style: none;
-	
 	margin-left:0 !important;
 	padding: 0;
 	margin: 40px auto;
 }
+
 ul.social li {
 	display: inline;
 	margin: 0 5px;
@@ -382,20 +407,22 @@ ul.social li {
 	color: #33ccff;
 }
 
-
 /* footer social icons */
 .social a.face:hover {
 	background:#3B5998;
 }
+
 .social a.twit:hover {
 	background:#33ccff;
 }
+
 .social a.goog:hover {
 	background:#BD3518;
 }
 .social a.linked:hover {
 	background:#007bb7;
 }
+
 .social a.face:hover i, .social a.twit:hover i,
 .social a.goog:hover i, .social a.linked:hover i {
 	color:#fff;
@@ -418,6 +445,7 @@ ul.social li {
 	background: -webkit-radial-gradient(bottom, ellipse, #094c72 0%, #01293f 100%);
 	background: radial-gradient(ellipse at bottom, #094c72 0%, #01293f 100%);  
 }
+
 .social li i {
 	margin:0;
 	line-height:50px;
@@ -435,6 +463,7 @@ ul.social li {
 	-ms-transition: all 0.5s;
 	transition: all 0.5s;
 }
+
 .social i {
 	color: #fff;
 	-webkit-transition: all 0.8s;
@@ -445,33 +474,29 @@ ul.social li {
 }
 
 .footer-top {
-	margin-top: 3rem;
-    background: #094c72;
+  background: #094c72;
 	background: -webkit-radial-gradient(bottom, ellipse cover, #094c72 0%, #01293f 100%);
 	background: -webkit-radial-gradient(ellipse at bottom, #094c72 0%, #01293f 100%);
 	background: -webkit-radial-gradient(bottom, ellipse, #094c72 0%, #01293f 100%);
-	background: radial-gradient(ellipse at bottom, #094c72 0%, #01293f 100%);
-	
+	background: radial-gradient(ellipse at bottom, #094c72 0%, #01293f 100%);	
 }
 
 @media screen and (max-width: 856px) {
 	#lighthouse {
 		right: 0;
 	}
-	#base:after {
+  
+  #base:after {
 		right: 0;
-	}
-	.masthead-title, .masthead-subtitle {
-		text-shadow: 2px 2px black;
 	}
 }
 
 @media (min-width: 768px) { 
-    #top-nav {
-        transition: padding-top 0.2s ease-in-out, padding-bottom 0.2s ease-in-out;
-        padding: 1.5rem 0;
-        min-height: 64px;
-        background: transparent !important;
+  #top-nav {
+    transition: padding-top 0.2s ease-in-out, padding-bottom 0.2s ease-in-out;
+    padding: 1.5rem 0;
+    min-height: 64px;
+    background: transparent !important;
 	}
 	
 	#top-nav.collapsed {
@@ -479,16 +504,36 @@ ul.social li {
 		background: black !important;
 		border-bottom: silver 2.5px solid !important;
 	}
-
 }
- @media screen and (max-height: 550px) {
-	 .navbar{
-		 background: transparent !important;
-	 }
-	 .navbar-brand {
+
+@media screen and (max-width: 767px) {
+  #top-nav {
+    background: transparent !important;
+  }
+}
+
+@media screen and (max-height: 550px) {
+	.navbar{
+	  background: transparent !important;
+	}
+  
+  .navbar-brand {
 		visibility: hidden;
-	 }
- }
+  }
+  
+  #lighthouse {
+    bottom: 40px;
+  }
+
+  #base {
+    bottom: -100px;
+  }
+
+  .masthead {
+    margin-bottom: 100px;
+  }
+}
+
 @media screen and (max-width: 600px) {
 	.stars {
 	  visibility: hidden;
@@ -498,14 +543,31 @@ ul.social li {
 	  width: 28%;
 	  display: none;
 	}
-	.fa-6x {
+  
+  .fa-6x {
 		font-size: 5rem !important;
 		margin: 0 8px;
 	}
+}
+
+@media screen and (max-width: 532px) {
+	.fa-6x {
+	  font-size: 3rem !important;
   }
 
-  @media screen and (max-width: 532px) {
-	  .fa-6x {
-		  font-size: 4rem !important;
-	  }
+  #network-head {
+    font-size: 2rem !important;
   }
+
+  #test-head {
+    font-size: 2rem !important;
+  }
+  
+  .page-section-heading {
+    font-size: 1.5rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+}
